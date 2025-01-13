@@ -1,0 +1,3 @@
+/home/reza/Documents/C/untitled18/cmake-build-debug/CMakeFiles/untitled18.dir
+/home/reza/Documents/C/untitled18/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/reza/Documents/C/untitled18/cmake-build-debug/CMakeFiles/rebuild_cache.dir
