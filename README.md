@@ -1,18 +1,29 @@
-The code appears to process a text file, formatting its content and outputting the results into another file. It implements several features, such as capitalization, punctuation handling, digit replacement, and line padding to maintain a specific format.
+This program processes a text file and outputs the formatted result to another file, modifying the content based on several conditions.
 
+Purpose:
+Reads characters from input.txt and writes them to output.txt, applying transformations, spacing, and formatting.
+Key Functionalities:
+File Handling:
 
-Key Observations:
-Input/Output File Handling:
+Opens input.txt for reading and output.txt for writing.
+Handles errors if files cannot be opened.
+Character Processing:
 
-The program uses FILE_INPUT and FILE_OUTPUT macros for input and output filenames, which is a good practice for flexibility.
-Proper error handling is implemented when opening files.
+Converts lowercase letters to uppercase after punctuation marks (. ! ?).
+Replaces digits with *.
+Adds a space after punctuation marks unless the next character is a space.
 Line Formatting:
 
-Each line in the output file is padded to 25 characters.
-If the counter reaches 25, the program appends | c:<count> to the line to indicate the character count.
-Character Transformation:
+Maintains a fixed line length of 25 characters.
+Adds spaces to complete lines shorter than 25 characters.
+Appends a marker | c:X at the end of each line, where X is the number of characters read in that line.
+Special Conditions:
 
-Digits (isdigit) are replaced with *.
-The first letter after a punctuation mark (. ! ?) is capitalized.
-Excessive carriage return characters (\r) are ignored.
+Skips carriage return characters (\r).
+Ensures proper handling of newline characters and spaces to avoid formatting errors.
+Summary:
+This program demonstrates:
 
+File I/O: Reading from and writing to files.
+Character Handling: Using functions like isalpha, isdigit, and ispunct.
+Dynamic Formatting: Ensures fixed-width lines and applies transformations.
